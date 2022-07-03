@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #192440;
+    --secondary-color: #00ffad;
+    --tertiary-color: #292b2c;
+    --quaternary-color: #ffffff;
+}
+
+html {
+    font-size: 10px;
+    font-family: Ubuntu, sans-serif;
+    line-height: 1.5;
+}
+
+/* Write your code below */
+
+/* BANNER Section Start */
+#banner {
+    background-image: url('./images/banner-bg-image.jpg');
+    color: var(--quaternary-color);
+    padding: 6.4rem 0;
+}
+
+#banner p {
+    font-size: 2rem;
+    margin: 2.4rem 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 8rem;
+}
+
+header a {
+    color: var(--quaternary-color);
+    text-decoration: none;
+    outline: none;
+    font-size: 2rem;
+}
+
+.btn {
+    text-align: center;
+    padding: 1.2rem 3rem;
+    margin: 2.4rem 0;
+    border: transparent 0.2rem solid;
+    border-radius: 2.2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* BANNER Section End */
+
+/* PROTECTION Section Start */
+.protection {
+    text-align: center;
+}
+
+.protection .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.protection .cards .card {
+    flex: 1;
+}
+
+.protection h4 {
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.protection h2 {
+    margin: 4.8rem 0;
+}
+
+/* PROTECTION Section End */
+
+/* FEATURES Section Start */
+.features {
+    margin-top: 7rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4.5rem 1.5rem;
+    flex-wrap: wrap;
+}
+
+.feature-1-wrapper {
+    background-image: linear-gradient(to bottom right, #ffffff 0% 50%, #00FFAD 50% 100%);
+}
+
+.feature-2-wrapper {
+    background-color: var(--secondary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+}
+
+.features img {
+    max-width: 50%;
+}
+
+.feature-2 img {
+    order: 1
+}
+
+/* FEATURES Section End */
+
+/* PRICING Section Start */
+.pricing {
+    text-align: center;
+}
+
+.pricing .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.pricing .card {
+    background-color: lightgray;
+    border-radius: 0.5rem;
+    padding: 2.4rem 1.5rem;
+    max-width: 30rem;
+    width: 100%;
+}
+
+.pricing .dark {
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+}
+
+.pricing h4 {
+    font-size: 2.4rem;
+}
+
+.pricing .card span {
+    font-size: 9rem;
+}
+
+.pricing p {
+    padding: 0.5rem 0;
+}
+
+.btn-outline-primary {
+    border-color: var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.pricing h2 {
+    margin: 4.8rem 0;
+}
+ /* PRICING Section End */
+
+/* PARTNERS Section Start */
+.partners {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 4.8rem 0;
+    align-items: center;
+}
+/* PARTNERS Section End */
+
+/* CONTACT Section Start */
+#contact {
+    background-image: url('./images/contact-bg-image.jpg');
+    color: var(--quaternary-color);
+    padding: 6.4rem 0;
+}
+
+#contact .container {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.6rem;
+}
+
+#contact .first-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+input, textarea {
+    background-color: transparent;
+    border: solid 0.1rem var(--secondary-color);
+    border-radius: 0.4rem;
+    outline: none;
+    color: var(--quaternary-color);
+    padding: 0.8rem 1.2rem;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.list-unstyled {
+    list-style: none;
+    margin-top: 2.5rem;
+}
+
+.list-unstyled li {
+    padding: 0.4rem;
+}
+
+.contact-info, .contact-form {
+    flex-grow: 1;
+}
+
+.first-row .form-group {
+    flex-grow: 1;
+}
+/* CONTACT Section End */
+
+/* FOOTER Section Start */
+footer {
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+    padding: 3.2rem;
+    font-size: 1.6rem;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}   
+
+#social-media {
+    display: flex;
+    gap: 2rem
+}
+
+#social-media a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--quaternary-color);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* FOOTER Section End */
+
+
+
+
+/* Write your code above */
+
+h1 {
+    font-size: 7.2rem;
+    margin: 4.8rem 0;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+p,
+li,
+label {
+    font-size: 1.6rem;
+}
+
+.font-weight-bold {
+    font-weight: bolder;
+}
+
+.font-weight-light {
+    font-weight: 300;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .feature-2 img {
+        order: 0
+    }
+
+    .feature div, .feature img {
+        flex: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
